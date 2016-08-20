@@ -1,6 +1,5 @@
 // import css
 const s = require('./greeter.css')
-
 const greetings = ['hola','salut', 'ciao', 'hej', 'ni hao', 'shalom', 'merhaba', 'foobar']
 const greeter = document.getElementById('greetings')
 const list = document.createElement('ul')

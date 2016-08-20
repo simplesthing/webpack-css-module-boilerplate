@@ -1,15 +1,13 @@
 # webpack-css-module-boilerplate
 Boilerplate project to compile CSS Modules using Webpack.
 
-
 ## Usage
 - Clone or download a copy of the repo
 - `npm install` dependencies
 - `npm run dev` for local development, open browser to `localhost:8080`
-- `npm run build` for bundle and css creation, placed in to `/dist`
+- `npm run build` for bundle and css creation, placed in to `/dist` ( output is intentionally unminified )
 
-
-## What's not included
+## What is not included
 What is or how to use [Webpack](https://webpack.github.io/docs/) or [PostCSS](http://postcss.org/). If you're a read the manual type of person take some time to follow the links and get famaliar with the tools. If you're a jump in and start doing things person follow the usage instructions above, checkout the plugins below and start doing things.
 
 ## What is included
@@ -27,4 +25,5 @@ The following starter pack of plugins are added that closely mimic features of S
 - [`postcss-hexrgba`](https://github.com/seaneking/postcss-hexrgba) allows hex to be passed into rgba() 
 - [`postcss-cssnext`](https://github.com/MoOx/postcss-cssnext) autoprefixer, custom media queries, color functions, pseudo selectors and more CSS3 features that aren't supported by browsers, it is what babel is for es6 allowing you to write the latest syntax now
 - [`postcss-sorting`](https://github.com/hudochenkov/postcss-sorting) sort your rules with specified order
-- [`postcss-browser-reporter`](https://github.com/postcss/postcss-browser-reporter) to output errors to browser
+- [`postcss-browser-reporter`](https://github.com/postcss/postcss-browser-reporter) to output errors to browser (dev only)
+- [`postcss-discard-comments`](https://github.com/ben-eb/postcss-discard-comments) remove comments from final output (prod only)

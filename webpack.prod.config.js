@@ -21,6 +21,9 @@ module.exports = {
     },{
       test: /\.css$/,
       loader:  ExtractTextPlugin.extract('style', 'css?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:3]!postcss')
+    },{
+      test: /\.(png|jpg|otf)$/,
+      loader: 'url?limit=25000'
     }]
   },
   postcss: function(webpack){
@@ -31,7 +34,7 @@ module.exports = {
     require('postcss-url')(),
     require('postcss-assets')({
       loadPaths: ['assets/'],
-       baseUrl: 'http://localhost:8080/'
+      relative: true
     }),
     require('precss')(),
     require('postcss-calc')(),
@@ -46,7 +49,10 @@ module.exports = {
    ]
   },
   plugins: [
-    new CleanPlugin([distPath], { root: projectRoot }),
+    new CleanPlugin([distPath], {
+      root: projectRoot,
+      exclude: ['index.html']
+    }),
     new ExtractTextPlugin('main.css', {allChunks: true})
   ]
 }

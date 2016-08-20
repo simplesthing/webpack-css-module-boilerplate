@@ -1,0 +1,30 @@
+@import './variables';
+
+@define-mixin plainlist{
+  /* test cssnext unset all browser defined styles */
+  all:unset;
+  li {
+    list-style: none;
+    margin: 1rem 2rem;
+    font-size: $h5-size;
+  }
+}
+ /* A class for providing accessibility readers what they need to read hidden elements
+  https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
+@define-mixin visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+@define-mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

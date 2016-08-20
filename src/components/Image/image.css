@@ -1,0 +1,7 @@
+.img {
+  /*Test postcss-utilities*/
+  @util aspect-ratio(16:9);
+  margin-top: 2rem;
+  background: resolve('css-is-awesome.png') no-repeat 0 0;
+  background-size: contain;
+}

@@ -1,0 +1,28 @@
+$red: #c70000;
+$orange: #FF5927;
+$yellow: #FFDC12;
+$green: #579D3D;
+$blue: #0DC7FF;
+/* cssnext rebeccapurple in homage to Eric Meyer's daughter */
+$purple: rebeccapurple;
+$grey: #515151;
+
+$body-bg: #FFF;
+$text-color: #333;
+$link-color: $green;
+/* postcss-hexrgba example*/
+$placeholder-color: rgba($grey, .35);
+
+$font-family: 'Work Sans', sans-serif;
+$font-size-base: 24px;
+$font-ratio: 1.33;
+/* modular-scale is a JavScript function,
+see modular-scale.js in this same directory*/
+$h1-size: modular-scale($font-ratio, 5);
+$h2-size: modular-scale($font-ratio, 4);
+$h3-size: modular-scale($font-ratio, 3);
+$h4-size: modular-scale($font-ratio, 2);
+$h5-size: modular-scale($font-ratio, 1);
+$h6-size: modular-scale($font-ratio, 0);
+
+$line-height: 1.75;

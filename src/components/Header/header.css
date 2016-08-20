@@ -1,0 +1,12 @@
+@import '../../css-modules/variables.css';
+
+.autoprefixed {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  background: $yellow;
+  /* test autoprefixer inspect header style in browser to see prefixes output */
+  transform: rotate(30deg);
+}

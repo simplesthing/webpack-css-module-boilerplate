@@ -19,6 +19,7 @@ There are some sample files in the `/src` directory to get you started building 
 The following starter pack of plugins are added that closely mimic features of SASS and beyond with examples of how to use the features.
 
 - [`postcss-import`](https://github.com/postcss/postcss-import) and [`postcss-url`](https://github.com/postcss/postcss-url) they work together to enable `@import` statements and allow them to look inside node modules for main css files
+- [`postcss-assets`](https://github.com/assetsjs/postcss-assets) asset manager for relative urls
 - [`precss`](https://github.com/jonathantneal/precss) lets you write SASS like variables, mixins, extends, property lookup, conditionals and loops 
 - [`postcss-calc`](https://github.com/postcss/postcss-calc) does what you'd expect, 
 - [`postcss-functions`](https://github.com/andyjansson/postcss-functions) for exposing JavaScript functions to generate CSS (my personal favorite)

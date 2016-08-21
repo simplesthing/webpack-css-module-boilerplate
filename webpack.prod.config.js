@@ -15,9 +15,12 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test :/\.js$./,
+      test :/\.js$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015', 'stage-0']
+      }
     },{
       test: /\.css$/,
       loader:  ExtractTextPlugin.extract('style', 'css?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:3]!postcss')
@@ -39,7 +42,7 @@ module.exports = {
     require('precss')(),
     require('postcss-calc')(),
     require('postcss-functions')({
-    glob: path.join(projectRoot, 'src', 'css-modules', '*.js')
+      glob: path.join(projectRoot, 'src', 'css-modules', '*.js')
     }),
     require('postcss-utilities')(),
     require('postcss-hexrgba')(),

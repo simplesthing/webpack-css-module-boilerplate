@@ -44,11 +44,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1)
-	__webpack_require__(2)
-	__webpack_require__(4)
-	__webpack_require__(6)
+	'use strict';
 
+	__webpack_require__(1);
+	__webpack_require__(2);
+	__webpack_require__(4);
+	__webpack_require__(6);
 
 /***/ },
 /* 1 */
@@ -60,14 +61,15 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// import css
-	const s = __webpack_require__(3)
-	const header = document.querySelector('header')
-	const box = document.createElement('div')
-	// apply css name from imported css js object
-	box.classList.add(s.autoprefixed)
-	header.appendChild(box)
+	'use strict';
 
+	// import css
+	var s = __webpack_require__(3);
+	var header = document.querySelector('header');
+	var box = document.createElement('div');
+	// apply css name from imported css js object
+	box.classList.add(s.autoprefixed);
+	header.appendChild(box);
 
 /***/ },
 /* 3 */
@@ -80,22 +82,23 @@
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
 	// import css
-	const s = __webpack_require__(5)
-	const greetings = ['hola','salut', 'ciao', 'hej', 'ni hao', 'shalom', 'merhaba', 'foobar']
-	const greeter = document.getElementById('greetings')
-	const list = document.createElement('ul')
+	var s = __webpack_require__(5);
+	var greetings = ['hola', 'salut', 'ciao', 'hej', 'ni hao', 'shalom', 'merhaba', 'foobar'];
+	var greeter = document.getElementById('greetings');
+	var list = document.createElement('ul');
 	// apply css name from imported css js object
-	list.classList.add(s.list)
+	list.classList.add(s.list);
 
-	greetings.map((g, i) => {
-	  let item = document.createElement('li')
-	  item.innerHTML = g
-	  list.appendChild(item)
-	})
+	greetings.map(function (g, i) {
+	  var item = document.createElement('li');
+	  item.innerHTML = g;
+	  list.appendChild(item);
+	});
 
-	greeter.appendChild(list)
-
+	greeter.appendChild(list);
 
 /***/ },
 /* 5 */
@@ -108,14 +111,15 @@
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// import css
-	const s = __webpack_require__(7)
-	const imagesection = document.getElementById('image')
-	const img = document.createElement('div')
-	// apply css name from imported css js object
-	img.classList.add(s.img)
-	imagesection.appendChild(img)
+	'use strict';
 
+	// import css
+	var s = __webpack_require__(7);
+	var imagesection = document.getElementById('image');
+	var img = document.createElement('div');
+	// apply css name from imported css js object
+	img.classList.add(s.img);
+	imagesection.appendChild(img);
 
 /***/ },
 /* 7 */
